@@ -18,6 +18,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top:  20px;
+    padding-bottom: 20px;
 }
 
 .header-container {
@@ -44,19 +46,32 @@ header {
     margin-left: auto;
 }
 
-}
-
 .hero {
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    justify-content: center;
 }
 
-.hero-main {
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    width: 80%;
+}
+
+.hero-left, .hero-right {
+    width: 50%;
+    max-width: 50%;
+}
+
+.hero-title {
     font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
 }
+
 
 .hero-sec,
 .header-links {
