@@ -1,11 +1,18 @@
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-family: "roboto", Arial, Helvetica, sans-serif;
     margin: 0;
+    width: 100%;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 header,
 .hero,
 .footer {
@@ -15,14 +22,27 @@ header,
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100vw;
+    justify-content: space-around;
+    width: 82%;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .header-logo {
     font-size: 24px;
     color: #F9FAF8;
 }
+
+.header-links, .header-links-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-links {
+    margin-left: auto;
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -36,7 +56,7 @@ header {
 }
 
 .hero-sec,
-.header-link {
+.header-links {
     font-size: 18px;
     color: #E5E7EB;
 }
