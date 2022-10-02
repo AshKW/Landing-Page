@@ -1,11 +1,6 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     font-family: "roboto", Arial, Helvetica, sans-serif;
     margin: 0;
-    width: 100%;
 }
 
 ul {
@@ -22,10 +17,14 @@ header,
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 82%;
-    padding-left: 100px;
-    padding-right: 100px;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
 }
 
 .header-logo {
@@ -33,14 +32,18 @@ header {
     color: #F9FAF8;
 }
 
-.header-links, .header-links-ul {
+.header-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
 }
 
 .header-links {
     margin-left: auto;
+}
+
 }
 
 .hero {
