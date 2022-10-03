@@ -10,11 +10,11 @@ ul {
 }
 header,
 .hero,
-.footer {
+footer {
     background-color: #1F2937;
 }
 
-header {
+header, footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,7 @@ header {
     padding-bottom: 20px;
 }
 
-button, .cta {
+button, .cta-container {
     color: #F9FAF8;
     background-color: #3882F6;
 }
@@ -35,12 +35,17 @@ button {
 }
 
 .header-container, .info-container, 
-.quote-container, .cta-container, .footer-container {
+.quote-container, .cta-container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 80%;
+    padding: 50px;
+}
+
+.header-container, .footer-container {
+    padding:  0;
 }
 
 .header-logo {
@@ -60,7 +65,7 @@ button {
     margin-left: auto;
 }
 
-.hero, .info, .quote, .cta, .footer {
+.hero, .info, .quote, .cta {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,13 +76,20 @@ button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 20px;
-    width: 80%;
+    column-gap: 50px;
+    width: 70%;
+    padding:  50px;
 }
 
 .hero-left, .hero-right {
     width: 50%;
     max-width: 50%;
+}
+
+.hero-right {
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-title {
@@ -96,12 +108,80 @@ button {
     flex-direction: column;
 }
 
+.info-header {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    padding-bottom: 50px;
+}
+
 .photos {
     display: flex;
+    column-gap: 40px;
+    flex-wrap: wrap;
 }
 
 .photo-block {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 200px;
+    text-align: center;
+}
 
+.photo-block img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    font-weight: 400;
+}
+
+.quote-container {
+    flex-direction: column;
+    width: 60%;
+}
+
+.quote-text {
+    align-self: flex-start;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: lighter;
+}
+
+.quote-name {
+    align-self: flex-end;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.cta-container {
+    border-radius: 20px;
+    margin: 40px;
+    width: 60%;
+    column-gap: 40px;
+    padding: 40px 80px 40px 80px;
+    justify-content: space-around;
+}
+
+.cta-button {
+    border: 1px;
+    border-style: solid;
+    border-color: #F9FAF8;
+}
+
+.cta-heading {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.footer-container {
+    color: #F9FAF8;
 }
